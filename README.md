@@ -32,12 +32,13 @@
    ```
 
 5. **Apply migrations**
-
+   
    ```bash
+   cd mysite
    python manage.py migrate
    ```
 
-6. **Create superuser**
+7. **Create superuser**
 
    ```bash
     python manage.py createsuperuser
