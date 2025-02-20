@@ -16,4 +16,11 @@ class PostDetail(generic.DetailView):
     model = Post
     template_name = 'post_detail.html'
 
+class AboutView(generic.TemplateView):
+    template_name = 'about.html'
+
+class ContactView(generic.TemplateView):
+    template_name = "contact.html"
+
+
 
