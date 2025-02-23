@@ -2,13 +2,18 @@
 {% block content %}
 
 <!-- Page Header-->
-<header class="masthead" style="background-image: url('../static/mysite/images/cake.jpg')">
+<header class="masthead">
+    <video autoplay muted loop id="bg-video">
+        <source src="https://videos.pexels.com/video-files/6299731/6299731-hd_1920_1080_30fps.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="overlay"></div>
     <div class="container position-relative px-4 px-lg-5">
         <div class="row gx-4 gx-lg-5 justify-content-center">
             <div class="col-md-10 col-lg-8 col-xl-7">
                 <div class="site-heading">
-                    <h1>Healthy Blog</h1>
-                    <span class="subheading">A blog written by the master of healthy deliciousness</span>
+                    <h1>Походка пінгвіна</h1>
+                    <span class="subheading">Чому пінгвіни так дивно ходять?</span>
                 </div>
             </div>
         </div>
@@ -23,19 +28,19 @@
             <div class="post-preview">
                 <a href="{% url 'post_detail' post.slug  %}">
                     <h2 class="post-title">{{ post.title }}</h2>
-                    <h3 class="post-subtitle">Read this blog post to find out the details</h3>
+                    <h3 class="post-subtitle">Прочитайте статтю, щоб дізнатись деталі</h3>
                 </a>
                 <p class="post-meta">
-                    Posted by
-                    <a href="{% url 'about' %}">Agatha Cristie</a>
-                    on {{ post.created_at }}
+                    Автор:
+                    <a href="{% url 'about' %}">Пінгвінний експерт</a>,
+                    {{ post.created_at }}
                 </p>
             </div>
             <!-- Divider-->
             <hr class="my-4" />
             {% endfor %}
             <!-- Pager-->
-            <div class="d-flex justify-content-end mb-4"><a class="btn btn-primary text-uppercase" href="#!">Older Posts →</a></div>
+            <div class="d-flex justify-content-end mb-4"><a class="btn btn-primary text-uppercase" href="#!">Попередні статті →</a></div>
         </div>
     </div>
 </div>
