@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog',
+    # 'appmap.django',
 ]
 
 MIDDLEWARE = [
@@ -50,7 +51,13 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    # 'appmap.middleware.AppMapMiddleware',
 ]
+APPMAP = {
+    'enabled': True,
+    'directory': 'appmap_output',  # Change this to your desired output folder
+}
+
 
 ROOT_URLCONF = 'mysite.urls'
 # ???
