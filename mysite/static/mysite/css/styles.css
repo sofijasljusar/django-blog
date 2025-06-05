@@ -163,7 +163,7 @@ header.masthead {
   object-fit: cover; /* Ensure the video covers the whole area without distortion */
   z-index: -2; /* Place the video behind the text */
 }
-header.masthead .overlay {
+header.video-header .overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -416,7 +416,7 @@ header.video-header {
   z-index: -2; /* Place the video behind the text */
 }
 
-header.video-header .overlay {
+header.masthead .overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -426,7 +426,7 @@ header.video-header .overlay {
     z-index: -1; /* Place the overlay between the video and the content */
 }
 
-header.video-header:before {
+header.masthead:before {
   content: "";
   position: absolute;
   top: 0;
@@ -446,15 +446,16 @@ header.image-header {
   background-color: #6c757d;
   background-size: cover;
   background-attachment: scroll;
+  z-index: -2;
 }
 
-header.image-header:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #212529;
-  opacity: 0.5;
-}
+/*header.image-header:before {*/
+/*  content: "";*/
+/*  position: absolute;*/
+/*  top: 0;*/
+/*  left: 0;*/
+/*  right: 0;*/
+/*  bottom: 0;*/
+/*  background-color: #212529;*/
+/*  opacity: 0.5;*/
+/*}*/
