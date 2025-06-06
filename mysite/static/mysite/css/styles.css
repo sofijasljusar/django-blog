@@ -400,7 +400,7 @@ header.masthead {
   align-items: center;
   justify-content: center;
 }
-header.masthead .overlay {
+header.video-header .overlay {
     position: absolute;
     top: 0;
     left: 0;
