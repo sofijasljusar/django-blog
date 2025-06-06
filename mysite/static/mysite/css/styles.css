@@ -1,19 +1,3 @@
-.btn-primary {
-  --bs-btn-color: #fff;
-  --bs-btn-bg: #4789D4;
-  --bs-btn-border-color: #4789D4;
-  --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #3B75B7;
-  --bs-btn-hover-border-color: #3B75B7;
-  --bs-btn-focus-shadow-rgb: 38, 151, 175;
-  --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #264F7E;
-  --bs-btn-active-border-color: #264F7E;
-  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: #4789D4;
-  --bs-btn-disabled-border-color: #4789D4;
-}
 :root {
   --bs-link-color: #212529;
   --bs-link-hover-color: #4789D4;
@@ -163,7 +147,7 @@ header.masthead {
   object-fit: cover; /* Ensure the video covers the whole area without distortion */
   z-index: -2; /* Place the video behind the text */
 }
-header.video-header .overlay {
+header.masthead .overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -389,7 +373,24 @@ a {
   opacity: var(--bs-btn-disabled-opacity);
 }
 
-/*VIDEO*/
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #4789D4;
+  --bs-btn-border-color: #4789D4;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #3B75B7;
+  --bs-btn-hover-border-color: #3B75B7;
+  --bs-btn-focus-shadow-rgb: 38, 151, 175;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #264F7E;
+  --bs-btn-active-border-color: #264F7E;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #4789D4;
+  --bs-btn-disabled-border-color: #4789D4;
+}
+
+/*IMAGE + VIDEO*/
 header.masthead {
   position: relative;
   margin-bottom: 3rem;
@@ -399,23 +400,6 @@ header.masthead {
   align-items: center;
   justify-content: center;
 }
-
-header.video-header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#bg-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -2; /* Place the video behind the text */
-}
-
 header.masthead .overlay {
     position: absolute;
     top: 0;
@@ -438,6 +422,23 @@ header.masthead:before {
   z-index: -1;
 }
 
+/*VIDEO*/
+header.video-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2; /* Place the video behind the text */
+}
+
 /*IMAGE*/
 header.image-header {
   padding-top: calc(8rem + 57px);
@@ -448,14 +449,3 @@ header.image-header {
   background-attachment: scroll;
   z-index: -2;
 }
-
-/*header.image-header:before {*/
-/*  content: "";*/
-/*  position: absolute;*/
-/*  top: 0;*/
-/*  left: 0;*/
-/*  right: 0;*/
-/*  bottom: 0;*/
-/*  background-color: #212529;*/
-/*  opacity: 0.5;*/
-/*}*/
