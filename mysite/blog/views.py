@@ -37,7 +37,7 @@ class PostDetail(generic.TemplateView):
         else:
             context["post"] = {"title": "Not Found", "content": "This post does not exist."}
 
-        return context  #???
+        return context  # ???
 
 
 class AboutView(generic.TemplateView):
